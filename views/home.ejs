@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroLink</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <% if(success.length>0){ %>
+        <div class="success">
+            <span class="">
+                <%= success %>
+            </span>
+        </div>
+    <% } %>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="/home">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/aboutUs">About Us</a></li>
+                <li><a href="/owners">Farmer Login</a></li>
+                <li><a href="/users/Logout">Logout</a></li>
+                <!-- <li><a href="/cart">Cart</a></li> -->
+                <li><a href="/cart"><i  class="fa-solid fa-bag-shopping" ></i></a></li>
+                
+            
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div> 
+    </section>
+    <section  id="hero">
+        <!-- <img src="img/her.png" alt=""> -->
+        <h4>Farm to kitchen</h4>
+        <h2>super value deals</h2>
+        <h1>On All Products</h1>
+        <p>save your time get best offer</p>
+        <button>Shop Now</button>
+    </section>
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="img/free.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/online order.png" alt="">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/save money.png" alt="">
+            <h6>Save money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/organic.png" alt="">
+            <h6>Organic products</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/good quality.png" alt="">
+            <h6>Good quality</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/247.png" alt="">
+            <h6>F24/7 Support</h6>
+        </div>
+    </section>
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>This time We have new Collection</p>
+        <div class="proContainer">
+            <% products.forEach(function(product){ %>
+                <div class="pro">
+                    <img src=" data:image/jpeg;base64,<%= product.image.toString('base64') %>" alt="">
+                    <div class="des">
+                        <span><%= product.category %></span>
+                        <h5><%= product.name %></h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4><%= product.price %> Rs.</h4>
+                    </div>
+                    <a href="/addtocart/<%= product._id %>"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+           <%  }) %>
+        </div>
+    </section>
+    <section id="banner" class="section-m1">
+        <h4>Good quality products</h4>
+        <h1>Up to <span>50% off</span> on this Products</h1>
+        <button>Explore more</button>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <!-- <img src="img/logo.png" alt="" class="logo"> -->
+            <h3>AgroLink contact</h3>
+            <p><span>Address : </span>562 Gandhi road Pune</p>
+            <p><span>Phone : </span>=012222 365</p>
+            
+            <p><span>Wisiting time : </span>10.00-18.00</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact us</a>
+
+        </div>
+        <div class="col">
+            <h4>Our Products</h4>
+            <p>directly from farmer</p>
+            <p>Fresh and good  quality</p>
+            <p>helping farmer</p>
+        
+        </div>
+    </footer>
+
+    <script src="script .js"></script>
+</body>
+
+</html>

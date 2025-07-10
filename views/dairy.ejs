@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Products</title>
+    <link rel="stylesheet" href="dairy.css">
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <h1>Dairy Products</h1>
+        </div>
+    </header>
+        <div class="list">
+            <% products.forEach(function(product){ %>
+            <div class="item">
+                <div class="cat">
+                    <img src="data:image/jpeg;base64,<%= product.image.toString('base64') %>" alt="">
+                </div>
+                <a href="#" id="link"><%= product.name %></a>
+                <p><% product.price %></p>
+            </div>
+            <% }) %>
+            <div class="item">
+                <div class="cat">
+                    <img src="img/cheese.png" alt="">
+                </div>
+                <a href="cerals.html" id="link">cheese</a>
+                <p>150 Rs</p>
+            </div>
+            <div class="item">
+                <div class="cat">
+                    <img src="img/ghee.png" alt="">
+                </div>
+                <a href="cerals.html" id="link">Ghee</a>
+                <p>800 Rs</p>
+            </div>
+            <div class="item">
+                <div class="cat">
+                    <img src="img/dahi.png" alt="">
+                </div>
+                <a href="spices.html" id="link">Yogurt / dahi</a>
+                <p>70 Rs</p>
+            </div>
+            <div class="item">
+                <div class="cat">
+                    <img src="img/paneer.png" alt="">
+                </div>
+                <a href="grains.html" id="link">Paneer</a>
+                <p>200 Rs</p>
+            </div>
+            <div class="item">
+                <div class="cat">
+                    <img src="img/shrikhand.png" alt="">
+                </div>
+                <a href="fruits.png" id="link">Shrikhand</a>
+                <p>200 Rs</p>
+            </div>
+            <div class="item">
+                <div class="cat">
+                    <img src="img/tak.png" alt="">
+                </div>
+                <a href="fruits.png" id="link">Tak/ chaas</a>
+                <p>50 Rs</p>
+            </div>
+
+        </div>
+</body>
+</html>

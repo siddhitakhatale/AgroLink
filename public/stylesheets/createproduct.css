@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.success{
+    background-color: blanchedalmond;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    /* margin-left: 200px; */
+    padding-top:15px ;
+}
+.success span{
+    color: darkcyan;
+    padding: 20px;
+    font-size: 20px;
+}
+.main{
+    display: flex;
+}
+.main1{
+    height:1000px;
+    width: 30%;
+    display: block;
+    margin-left: 0px;
+    /* color:rgb(134, 42, 42); */
+    border: 1px solid rgb(92, 61, 115);
+    border-radius: 1%;
+    align-items: start;
+    
+    
+    
+}
+.link a{
+    color:rgb(72, 25, 118);
+    display: block;
+    padding-left: 4px;
+    padding-top: 3px;
+    font-size: 20px;
+    font-weight: 800;
+    align-items: start;
+    margin-top: 15px;
+    
+    outline: none;
+    text-decoration: none;
+}
+form{
+    width: 100%;
+    padding:10px 100px 100px 100px;   
+    background-color: rgb(213, 217, 225);
+    border:2px solid gray;
+    height: 100%;
+}
+h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+h3{
+    text-align: start;
+    padding: 15px 15px 15px 0px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.image{
+    display: flex;
+    padding-bottom: 20px;
+}
+.bar h3{
+    color: rgb(64, 51, 102);
+}
+.image label{
+    padding-right: 20px;
+    color: rgb(66, 26, 11);
+}
+.product input{
+    color: black;
+    background-color: rgba(149, 118, 181, 0.422);
+    /* color: aliceblue;/ */
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+    width: 60%;
+}
+
+.panel1 h3{
+   padding-top:  70px;
+   font-size: 25px;
+   font-weight: 900;
+}
+.panel input{
+    justify-content: space-between;
+    padding: 6px;
+    margin:2px 30px 30px 0;
+    
+    outline: none;
+    background-color: rgba(184, 122, 148, 0.379);
+    color: black;
+}
+#submit{
+    text-align: center;
+    display: inline-block;
+    padding: 12px;
+    background-color:green;
+    color:whitesmoke;
+    margin-left: 220px;
+    outline: none;
+    overflow: none;
+    border-radius: 5px;
+    border:0.5px solid green;
+
+    align-items: center;
+}

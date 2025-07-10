@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Farm Fresh - Blog</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      padding: 1rem 2rem;
+      color: white;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #388E3C;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .blog-container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .blog-post {
+      background: white;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .blog-post img {
+      width: 100%;
+      height: auto;
+    }
+    .blog-content {
+      padding: 1.5rem;
+    }
+    .blog-content h2 {
+      margin-top: 0;
+      color: #2e7d32;
+    }
+    .blog-content p {
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AgroLink</h1>
+    <p>Healthy Living Starts with Farmers</p>
+  </header>
+
+  <nav>
+    <a href="/home">Home</a>
+    <a href="/shop">Shop</a>
+    <a href="/blog">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main class="blog-container">
+    <div class="blog-post">
+      
+      <div class="blog-content">
+        
+        <img src="/img/online order.png" alt="Farmers at market">
+        <h2>Why Buying Direct from Farmers Matters</h2>
+        <p>Discover the benefits of supporting local agriculture and how it boosts your community, health, and environment.</p>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-post">
+      <img src="/img/organic.png" alt="Organic farm">
+      <div class="blog-content">
+        <h2>5 Tips for Starting Your Own Organic Farm</h2>
+        <p>From soil health to sustainable techniques, explore practical advice for aspiring organic farmers.</p>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-post">
+      <img src="/img/hapus.png" alt="Seasonal produce">
+      <div class="blog-content">
+        <h2>Eating with the Seasons</h2>
+        <p>Learn about seasonal produce and how aligning your meals with nature can be both delicious and economical.</p>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AgroLink. Grown with love.</p>
+  </footer>
+
+</body>
+</html>

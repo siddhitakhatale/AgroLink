@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/createproduct.css">
+</head>
+
+<body>
+    <% if(success.length>0){ %>
+        <div class="success">
+            <span class="">
+                <%= success %>
+            </span>
+        </div>
+    <% } %>
+    <div class="main">
+        <div class="main1">
+            <div>
+                <div class="link">
+                    <a href="">All products</a>
+                    <a href="">Create new product</a>
+                </div>
+            </div>
+        </div>
+        
+            <main id="footer">
+                <form action="/products/create" method="post" enctype="multipart/form-data">
+                    <div class="bar">
+                        <h2>Create new product</h2>
+
+                        <h3>Product details</h3>
+                        <div class="image">
+                            <label for="">Product Image</label>
+                            <input name="image" type="file" value="select file">
+                        </div>
+                    </div>
+                    <div class="product">
+                        <input type="text" name="category" placeholder="Category of the product">
+                        <input type="text" name="name" placeholder="Product name">
+                        <input type="text" name="price" placeholder="product Price">
+                        <input type="text" name="discount" placeholder="Discount product">
+                    </div>
+                    <div class="panel1">
+                        <h3>Panel details</h3>
+                           <div class="panel">
+                               <input type="text" placeholder="Background color" name=" bgcolor">
+                               <input type="text"  placeholder="Panel color" name="panelcolor">
+                               <input type="text" placeholder="Text Color" name="textColor">
+                            </div>
+                    </div>
+                    <input id="submit" type="submit" value="create new prooduct" >
+              </form>
+        </main>
+        </div>
+        </div>
+        
+</body>
+
+</html>
