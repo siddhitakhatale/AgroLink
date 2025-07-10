@@ -17,3 +17,11 @@ An e-commerce website connecting farmers directly with consumers, allowing them 
 
   ## 📦 Setup Instructions
   nodemon start
+
+## 📸 Screenshots
+
+### 🏠 Homepage
+![Homepage](screenshots/homepage.png)
+
+### 🛒 Product Page
+![Product Page](screenshots/product-page.png)
